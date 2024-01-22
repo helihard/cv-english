@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Heli Hård: cv</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link href="header.css" rel="stylesheet" />
+    <link href="navbar.css" rel="stylesheet" />
+    <link href="main-area.css" rel="stylesheet" />
+    <link href="text-styles.css" rel="stylesheet" />
+    <link href="media-min750px.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, target-densitydpi=device-dpi"
+    />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <form onsubmit="validatePassword(); return false">
+      <input type="password" id="pass" />
+      <button type="submit">Enter</button>
+    </form>
+    <div id="wrapper">
+      <div id="container" style="display: none">
+        <header>
+          <div id="img-div">
+            <img id="thumbnail" src="images/heli.jpg" /> <img id="img-lg"
+            src=images/heli.jpg>
+          </div>
+          <div id="name-div"><h1>Heli Källoff Hård</h1></div>
+          <div id="email-div">
+            <i class="fa-solid fa-at fa-xl"></i
+            ><a href="mailto:heli.hard@studerande.plushogskolan.se"
+              >heli.hard@studerande.plushogskolan.se</a
+            >
+          </div>
+          <div id="github-div">
+            <i class="fa-brands fa-github fa-xl"></i
+            ><a href="https://github.com/helihard/" target="_blank"
+              >GitHub: helihard</a
+            >
+          </div>
+          <div id="coding-experience-div">
+            Experience in <strong>HTML</strong><i class="fa-solid fa-circle"></i
+            ><strong>CSS</strong><i class="fa-solid fa-circle"></i>
+            <strong>JavaScript</strong><i class="fa-solid fa-circle"></i
+            ><strong>MySQL</strong><i class="fa-solid fa-circle"></i
+            ><strong>C#</strong>
+          </div>
+          <div id="interested-in-div">
+            Particularly interested in databases<i
+              class="fa-solid fa-circle"
+            ></i
+            >accessibility<i class="fa-solid fa-circle"></i>UX<i
+              class="fa-solid fa-circle"
+            ></i
+            >data security
+          </div>
+        </header>
+        <div id="nav-main">
+          <nav>
+            <!-- Fullstack tab -->
+            <div
+              class="main-content-tab active"
+              onclick="displayMainContent(event, 'fullstack')"
+            >
+              Fullstack JavaScript Developer Programme
+            </div>
+            <!-- Previous work tab -->
+            <div
+              class="main-content-tab"
+              onclick="displayMainContent(event, 'previous-work')"
+            >
+              Previous Work Experience
+            </div>
+            <!-- Previous training tab -->
+            <div
+              class="main-content-tab"
+              onclick="displayMainContent(event, 'previous-training')"
+            >
+              Previous Training
+            </div>
+            <!-- Voluntary work tab -->
+            <div
+              class="main-content-tab"
+              onclick="displayMainContent(event, 'voluntary-work')"
+            >
+              Volunteer Work
+            </div>
+          </nav>
+          <main>
+            <!-- Fullstack full text -->
+            <div id="fullstack" class="main-content-full">
+              <p>
+                <strong>Fullstack JavaScript Developer</strong> is a two-year,
+                full-time higher vocational education programme at
+                Teknikhögskolan in Lund, Sweden. For more information (in
+                Swedish) about the programme, go to
+                <a
+                  href="https://teknikhogskolan.se/utbildningar/fullstackutvecklare-javascript/"
+                  target="_blank"
+                >
+                  Teknikhögskolan's website: [ Fullstack JavaScript Developer
+                  Programme ]</a
+                >
+              </p>
+              <p style="color: green; font-size: 15px">
+                <i class="fa-solid fa-asterisk"></i> I am currently taking part
+                in this course.
+              </p>
+              <div id="curriculum">
+                <div id="first-year">
+                  <strong>Year 1</strong>
+                  <ul>
+                    <li>Frontend, 35 HVE-credits</li>
+                    <li>Basic JavaScript Programming, 50 HVE-credits</li>
+                    <li style="color: green">
+                      Databases, 40 HVE-credits
+                      <i class="fa-solid fa-asterisk"></i>
+                    </li>
+                    <li>Software Production and Delivery, 50 HVE-credits</li>
+                    <li>Workplace Training 1, 40 HVE-credits</li>
+                  </ul>
+                </div>
+                <!-- end first year -->
+                <div id="second-year">
+                  <strong>Year 2</strong>
+                  <ul>
+                    <li>Object-oriented Analysis and Design, 35 HVE-credits</li>
+                    <li>Java Spring, 30 HVE-credits</li>
+                    <li>Software Security, 30 HVE-credits</li>
+                    <li>Workplace Training 2, 70 HVE-credits</li>
+                    <li>Graduation Project, 20 HVE-credits</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- end curriculum -->
+            </div>
+            <!-- end Fullstack full text -->
+            <!-- Previous work full text -->
+            <div id="previous-work" class="main-content-full">
+              <h2>Selected Work Experience</h2>
+              <dl>
+                <dt>Operations Manager, Trans Health and Rights Advisor</dt>
+                <dd>
+                  RFSL Ungdom, the Swedish Youth Federation for LGBTQIA Rights
+                </dd>
+                <dd>2015– (on a leave of absence)</dd>
+                <dt>Researcher</dt>
+                <dd>
+                  Myndigheten för ungdoms- och civilsamhällesfrågor, the Swedish
+                  Agency for Youth and Civil Society
+                </dd>
+                <dd>2021 (temporary employment)</dd>
+                <dt>
+                  Consultant for the commission of inquiry for stronger status
+                  and improved living conditions for transgender persons in
+                  Sweden
+                </dt>
+                <dd>Regeringskansliet, the Swedish Government Offices</dd>
+                <dd>2017 (temporary employment)</dd>
+                <dt>Trans Health and Rights Advisor</dt>
+                <dd>RFSL, the Swedish Federation for LGBTQI Rights</dd>
+                <dd>2016–2017</dd>
+                <dt>Project Manager</dt>
+                <dd>
+                  RFSL Ungdom, the Swedish Youth Federation for LGBTQIA Rights
+                </dd>
+                <dd>2013–2015</dd>
+                <dt>Information Officer</dt>
+                <dd>
+                  RFSU Stockholm, the Stockholm branch of the Swedish
+                  Association for Sexuality Education
+                </dd>
+                <dd>2012–2013</dd>
+                <dt>Workshop Leader</dt>
+                <dd>
+                  RFSL Ungdom, the Swedish Youth Federation for LGBTQIA Rights
+                </dd>
+                <dd>2009–2013</dd>
+                <dt>
+                  Editor, Language and translations reviewer, Proofreader,
+                  Writer
+                </dt>
+                <dd>Ordvan textproduktion (sole trader)</dd>
+                <dd>2004–2015</dd>
+              </dl>
+            </div>
+            <!-- end Previous work full text -->
+            <!-- Previous training full text -->
+            <div id="previous-training" class="main-content-full">
+              <h2>Selected Training</h2>
+              <dl>
+                <dt>
+                  <strong>Programming 1 </strong>
+                </dt>
+                <dd>Hermods (komvux, municipal adult education), 2023</dd>
+                <dt>
+                  <strong
+                    >Children and Young People in Difficult Situations in
+                    Life</strong
+                  >, 7.5 credits
+                </dt>
+                <dd>Stockholm University, 2016</dd>
+                <dt><strong>Youth Coach Diploma Programme</strong></dt>
+                <dd>Tollare folkhögskola (folk high school), 2012–2013</dd>
+                <dt>
+                  <strong>Media Technology and Web Publishing</strong>, 7.5
+                  credits
+                </dt>
+                <dd>Södertörn University, 2003</dd>
+                <dt>
+                  <strong>Basic Course in Publishing Studies</strong>, 30
+                  credits
+                </dt>
+                <dd>Stockholm University, 2003</dd>
+                <dt>
+                  <strong>Bachelor's Programme in Journalism</strong>, 150
+                  credits
+                </dt>
+                <dd>
+                  JMK (Stockholm School of Journalism), Stockholm University,
+                  2000–2002
+                </dd>
+              </dl>
+            </div>
+            <!-- end Previous training full text -->
+            <!-- Voluntary work full text -->
+            <div id="voluntary-work" class="main-content-full">
+              <h2>Selected Volunteer Work</h2>
+              <dl>
+                <dt>LGBTQ and neurodiversity talk group leader</dt>
+                <dd>Attention Stockholm, 2015–2016</dd>
+                <dt>Information Officer</dt>
+                <dd>
+                  RFSL Stockholm, the Stockholm branch of the Swedish Federation
+                  for LGBTQI Rights, 2012–2013
+                </dd>
+                <dt>Youth helpline volunteer</dt>
+                <dd>
+                  Stjärnjouren, Sundbyberg's helpline for girls and transgender
+                  youth, 2011
+                </dd>
+              </dl>
+            </div>
+            <!-- end Voluntary work full text -->
+          </main>
+        </div>
+        <!-- end nav-main -->
+      </div>
+      <!-- end container -->
+    </div>
+    <!-- end wrapper -->
+    <script src="script.js"></script>
+  </body>
+</html>
